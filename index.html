@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Learning Management System
+        </title>
+        <link rel="icon" href="icon.png">
+        <link rel="stylesheet" href="css.css">
+        <link rel="stylesheet" href="java.js">
+        <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Pacifico&family=Ubuntu+Mono:wght@700&display=swap" rel="stylesheet">
+        <script src="java.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    </head>
+    <body>
+        <div class="box">
+        <div class="logo no-border">
+        <img src="logo.jpg" alt="LPU_LOGO">
+        </div>
+        <div class="nav">
+            <a href="page.html"><button class="b wn">HOME</button></a>
+        <a href="video.html"><button class="b wn">VIDEO</button></a>
+        <button class="b wn">TUTORS</button>
+        <button class="b wn">TEST YOURSELF</button>
+        <a href="contact.html"><button class="b wn">CONTACT US</button></a>
+        </div>
+        <div class="side">
+            <header ><h2>SUBJECT</h2></header>
+            <hr><br><hr>
+                <button class="dark" onclick="topic(1)">TOPIC 1</button><br>
+                <button class="dark" onclick="topic(2)">TOPIC 2</button><br>
+                <button class="dark" onclick="topic(3)">TOPIC 3</button><br>
+                <button class="dark" onclick="topic(4)">TOPIC 4</button><br>
+                <button class="dark" onclick="topic(5)">TOPIC 5</button><br>
+        </div>
+        <div class="up">
+            <p>CSE326:INTERNET PROGRAMMING LABORATORY
+            </p><hr>
+            <p>Through this course students should be able to
+            </p>
+        </div>
+        <div class="info">
+            <div>
+                <p style="background-color: rgba(255, 255, 255,0.7);display: inline-block;" id="slide">TOPIC</p>
+                <hr>
+                <p style="background-color: rgba(255, 255, 255,0.7);display: inline-block;" id="slidedis"></p>
+            </div>            
+        </div>
+        <div class="btn">
+            <button class="pn b" onclick="plus(-1)" style="float: left;border-radius: 25px 5px 5px 25px;"><b><-PREVIOUS</b></button>
+            <button class="pn b" onclick="plus(1)" style="float: right;border-radius: 5px 25px 25px 5px;"><b>NEXT-></b></button>
+        </div>
+        <div class="dis no-border">
+            <button class="faq">FAQ</button>
+        <p style="background-color: grey;display: inline-block;padding: 2px;"><strong> UTTAM GUPTA©</strong>
+        <em> All Rights Reserved</em></p>
+        <footer class="white-section" id="footer">
+        <i class="social-icon fab fa-facebook-f"></i>
+        <i class="social-icon fab fa-twitter"></i>
+        <i class="social-icon fab fa-instagram"></i>
+        <i class="social-icon fas fa-envelope"></i>
+        </footer>
+        </div>
+        <div class="feed">
+            <label style="color: white; ">
+             <strong style="font-family: 'Ubuntu Mono', monospace;font-size: 1.2rem;">FEEDBACK</strong>
+            </label><br>
+            <textarea id="feed" class="feedback" name="feedback" placeholder="Write your feedback here in your handwriting..."></textarea><br>
+            <button class="submit b" type="submit" value="submit" onclick="submit();">SUBMIT</button>
+        </div>
+        </div>
+    </body>
+</html>

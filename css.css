@@ -1,0 +1,162 @@
+body{
+    background-image: url(https://images.shiksha.com/mediadata/images/1488259134phpShnPJa.jpeg);
+    background-position:center;
+    background-size: cover;
+    margin: 0;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-family: 'Pacifico', cursive;
+}
+h2{
+    font-family: 'Ubuntu Mono', monospace;
+    size: 1.5rem;
+}
+div{
+    border-style:none;
+}
+hr{
+    margin: 0;
+    width: 100%;
+    border-style: double;
+}
+.no-border{
+    border-style: none;
+}
+.logo{
+    
+    grid-area: l;
+}
+.logo>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.nav{
+    grid-area: n; 
+    background-image: url(lpu.jpg);
+    background-position:center;
+    background-size: cover;
+}
+.wn{
+    font-weight: bolder;
+    color: white;
+    float: left;
+    height: 30%;
+    width: 20%;
+    border: 0;
+    background-color: transparent;
+}
+.b:hover{
+    transition: 0.5s;
+    background-image:linear-gradient(to bottom, #eecd0f ,#db7134);
+}
+.side{
+    text-align: center;
+    padding: 5%;
+    grid-area: s;
+    background-color: rgba(236, 236, 75,0.5);
+}
+.dark{
+    font-size: 1rem;
+    border-color: tomato;
+    margin-left: 0;
+    background-color: transparent;
+    border-width: 10px;
+    border-style: none none none solid;
+    width: 100%;
+    padding: 10%;
+    background-color: rgb(255, 99, 71,0.2);
+}
+.dark:hover{
+    transition: 0.5s;
+    font-size: 1.2rem;
+    background-color: rgb(255, 99, 71,0.5);
+}
+.up{
+    padding: 1%;
+    grid-area: u;
+    background-color: rgba(240, 168, 60,0.5);
+}
+.info{
+    padding: 1%;
+    position: relative;
+    grid-area: i;
+    background-color:rgba(18, 28, 168,0.5);
+}
+.slide{
+    position: absolute;
+}
+.btn{
+    margin: 10px;
+    background-color: rgba(138, 43, 226,0.5);
+    border-style:solid;
+    padding: 10px;
+    border-radius: 255px;
+    grid-area: b;
+}
+.pn{
+    background-image:linear-gradient(to bottom, #db7134, #eecd0f);
+    padding: 7px;
+    font-size: 1rem;
+    border-width: 1px
+}
+.dis{
+    /* padding-top: 8vh; */
+    grid-area: d;
+    text-align:center ;
+}
+.faq{
+    float: left;
+    /* font-size: 2rem; */
+}
+.feed{
+    padding: 5%;
+    grid-area: f;
+    background-color: rgba(165, 42, 42,0.5);
+}
+.feedback{
+    font-family: 'Gloria Hallelujah', cursive;
+    resize: none;
+    margin: 5% 0;
+    height: 80%;
+    width: 100%;
+}
+.submit{
+    float: right;
+    border-radius: 10%;
+    background-image:linear-gradient(to bottom, #db7134, #eecd0f);
+    align-self: right;
+}
+.box{
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    grid-gap:1px ;
+    display: grid;
+    grid-template-areas:
+    "l n n n n n n"
+    "l n n n n n n"
+    "l n n n n n n"
+    "l u u u u u u"
+    "s u u u u u u"
+    "s u u u u u u"
+    "s u u u u u u"
+    "s i i i i f f"
+    "s i i i i f f"
+    "s i i i i f f"
+    "s i i i i f f"
+    "s i i i i f f"
+    "s i i i i f f"
+    "s b b b b f f"
+    "s d d d d f f"
+    "s d d d d f f";
+    height: 100vh;
+}
+.social-icon{
+    text-align: center;
+}
+.white-section{
+    text-align: center;
+}
+.feedback::placeholder{
+    font-family: 'Ubuntu Mono', monospace;
+}
